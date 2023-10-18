@@ -5,7 +5,7 @@
     <div class="max-w-3xl mx-auto">
         <!-- Blog post header -->
         <div class="py-8">
-            <h1 class="text-3xl font-bold mb-2">Blog post title</h1>
+            <h1 class="text-3xl font-bold mb-2">Blog post title  {{postId}}</h1>
             <p class="text-gray-500 text-sm">Published on <time datetime="2022-04-05">April 5, 2022</time></p>
         </div>
 
@@ -27,10 +27,10 @@
 </div>
     </div>
 </template>
-<script>
-export default {
-    
-}
+<script setup>
+const route = useRoute()
+console.log(route.params.slug)
+const postId = route.params.slug
 </script>
 <style lang="">
     
