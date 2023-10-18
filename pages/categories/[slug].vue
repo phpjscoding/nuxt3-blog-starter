@@ -21,7 +21,7 @@
             <p>Integer ullamcorper leo nulla, nec commodo metus vehicula eget. Duis vel vestibulum tellus, eget mattis
                 quam. Nullam euismod libero sed nibh tristique, vel eleifend risus sagittis. In hac habitasse platea
                 dictumst. Sed dapibus magna at arcu euismod, a pulvinar turpis tristique. Suspendisse imperdiet velit
-                nec lectus rutrum varius.</p>
+                nec lectus rutrum varius.</p> 
         </div>
     </div>
 </div>
@@ -29,7 +29,6 @@
 </template>
 <script setup>
 const route = useRoute()
-console.log(route.params.slug)
 const postId = route.params.slug
 </script>
 <style lang="">
